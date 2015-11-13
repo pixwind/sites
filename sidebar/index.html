@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS3超酷滑动隐藏侧边栏特效</title>
+<style type="text/css">
+* {margin: 0; padding: 0;}
+body{ overflow-x: hidden;}
+
+/*Hiding the checkbox*/
+#tm {display: none;}
+
+.page{ background: #f8f8f8; }
+
+/*Content area*/
+ section { background: #fff; position: relative; transition: all 0.25s;}
+ 
+/*Nav styles*/
+.sidenav {position: absolute;}
+
+/*Animation controls using checkbox hack*/
+/*Animate content area to the right*/
+#tm:checked ~ section {transform: translateX(150px);}
+/*Animate links from right to left + fade in effect*/
+#tm:checked ~ .sidenav b {opacity: 1; transform: translateX(0);}
+/*Adding delay to link animation - in multiples of .08s*/
+/*One can use jQuery also for creating the delayed effect. But I will stick to manual CSS for this walkthrough.*/
+</style>
+<!--[if IE]>
+    <script src="js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="page">
+	<input type="checkbox" id="tm" />
+	
+	<div class="sidenav">
+	    <label for="tm">Click Me</label>
+	    <ul>
+	        <li><a href="#">Tasks</a></li>
+	        <li><a href="#">Messages</a></li>
+	        <li><a href="#">New Post</a></li>
+	        <li><a href="#">Settings</a></li>
+	        <li><a href="#">Starred</a></li>
+	        <li><a href="#">Logout</a></li>
+	    </ul>
+	</div>
+	
+	<section>
+	    <label for="tm">Click Me</label>
+	    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	</section>
+	
+</div>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+</body>
+</html>

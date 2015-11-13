@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>极壹S预约抢购</title>
+	<script type="text/javascript">
+	    function isPC()
+	    {
+	        var userAgentInfo = navigator.userAgent;
+	        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+	        var flag = true;
+	        for (var v = 0; v < Agents.length; v++) {
+	            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+	        }
+	        return flag;
+	    }
+	    if(!isPC()){
+	        window.location.href="http://www.hiwifi.com/jiluyou0319/m.html";
+	    }
+	</script>
+	<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	body{
+		font-family: "Microsoft Yahei",Helvetica,Arial,sans-serif;
+		color: #444;
+	}
+	a{
+		text-decoration: none;
+	}
+	h1,h2,h3,h4,h5,h6,em{
+		font-weight: normal;
+		font-style: normal;
+	}
+	.now-booking-btn{
+		width: 160px;
+		height:55px;
+		line-height: 55px;
+		font-size: 24px;
+		display: block;
+		background: #2ea7e0;
+		color:#fff;
+		text-align: center;
+		border-radius: 5px;
+	}
+	.now-booking-btn.small{
+		width: 110px;
+		height: 35px;
+		line-height: 35px;
+		font-size: 14px;
+	}
+	h1{
+		width: 100%;
+		height:60px;
+		background: #34aae1;
+		position: relative;
+		z-index:10;
+	}
+	.clearfix:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+	.clearfix{
+		*zoom:1;
+	}
+	.logo{
+		width:123px;
+		height:60px;
+		display: block;
+		margin:0 auto;
+		background: url("http://c.hiwifi.com/ued/store/v3/image/landing/logo.png") no-repeat center center;
+	}
+	.landing-line.one{
+		background-color:#000;
+		width: 100%;
+	}
+	.landing-line-wrap{
+		width: 960px;
+		margin:0 auto;
+	}
+	.landing-line.one .now-booking-btn{
+		margin-bottom: 20px;
+	}
+	.one .landing-line-wrap{
+		background: url("http://c.hiwifi.com/ued/store/v3/image/landing/landing-j1s-1.png") no-repeat center top;
+		height:615px;
+		width: 1080px;
+		position: relative;
+		top: -60px;
+		z-index: 11;
+		padding-left: 55px;
+		border-top:1px solid transparent;
+	}
+	.one .landing-line-wrap p{
+		font-size: 27px;
+		color:#fff;
+		margin-top: 360px;
+		margin-bottom: 16px;
+	}
+	.two.landing-line{
+		margin-top:-60px;
+		background-color: #fff;
+	}
+	.go-home{
+		font-size: 14px;
+		color:#fff;
+		text-decoration: underline;
+	}
+	.landing-line h3{
+		font-size: 44px;
+		color: #686868;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.line-bg{
+		background:url("http://c.hiwifi.com/ued/store/v3/image/landing/landing-border.png") no-repeat center bottom;
+		padding:30px 0;
+	}
+	.landing-pro-left{
+		float: left;
+		margin-left: 50px;
+	}
+	.landing-line.two .landing-line-wrap{
+		background: url("http://c.hiwifi.com/ued/store/v3/image/landing/landing-border-v.png") no-repeat center center
+	}
+	.landing-pro-right{
+		float: right;
+		margin-right: 100px;
+		margin-bottom: 40px;
+	}
+	.landing-center{
+		text-align: center;
+	}
+	.landing-center .now-booking-btn{
+		margin:5px auto;
+	}
+	.landing-pro-type{
+		font-size: 18px;
+		color:#444;
+		margin:15px auto 5px;
+	}
+	.landing-pro-price{
+		font-size: 20px;
+		color:#2ea7e0;
+	}
+	.landing-line.two .f15{
+		font-size: 15px;
+		clear: both;
+	}
+	.landing-h6{
+		font-size: 30px;
+	}
+	.landing-h6-sub{
+		font-size: 23px;
+		color:#686868;
+	}
+	.landing-bg-ad{
+		width: 803px;
+		height: 462px;
+		margin:20px auto;
+		background: url("http://c.hiwifi.com/ued/store/v3/image/landing/landing-j1s-4.jpg") no-repeat center center;
+	}
+	.landing-line.three .landing-p{
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+	.landing-line.four .landing-line-wrap{
+		height: 548px;
+		background: url("http://c.hiwifi.com/ued/store/v3/image/landing/landing-j1s-5.jpg") no-repeat left top;
+		position: relative;
+		left:-80px;
+		width: 1080px;
+	}
+	.landing-line.four .landing-pro-right{
+		width: 420px;
+		margin-top: 30px;
+		margin-right:-80px;
+	}
+	.landing-line.four .landing-p{
+		font-size: 14px;
+		margin-top: 125px;
+		margin-bottom: 20px;
+	}
+	.landing-bg-app{
+		width: 724px;
+		height: 224px;
+		margin:40px auto;
+		background: url("http://c.hiwifi.com/ued/store/v3/image/landing/landing-j1s-6.jpg") no-repeat left top;
+	}
+	.landing-line.five,.landing-line.six{
+		padding:30px 0;
+	}
+	.landing-line.five .landing-p{
+		font-size: 14px;
+		margin-bottom: 30px;
+	}
+	.landing-line.five .landing-p.f20{
+		font-size: 20px;
+	}
+	.landing-line.six{
+		background: #ececec;
+		padding-bottom: 60px;
+	}
+	.landing-date{
+		margin:0 45px;
+		float: left;
+	}
+	.landing-right{
+		overflow: hidden;
+	}
+	.landing-bg-text{
+		width: 412px;
+		height: 190px;
+		background: url("http://c.hiwifi.com/ued/store/v3/image/landing/landing-j1s-8.jpg") no-repeat left top;
+	}
+	.landing-line.six p{
+		font-size: 27px;
+		margin-bottom: 15px;
+	}
+	</style>
+</head>
+<body>
+	<h1><a href="http://www.hiwifi.com/home" class="logo"></a></h1>
+	<div class="landing-line one">
+		<div class="landing-line-wrap">
+			<p>4月2日星期三中午12点</p>
+			<a href="http://store.hiwifi.com/yuyue" class="now-booking-btn">立即预约</a>
+			<a href="http://www.hiwifi.com/j1s" class="go-home">进入官网&gt;&gt;</a>
+		</div>
+	</div>
+	<div class="landing-line two line-bg">
+		<div class="landing-line-wrap landing-center clearfix">
+			<h3>4月2日星期三中午12点</h3>
+			<div class="landing-pro-left">
+				<img src="http://c.hiwifi.com/ued/store/v3/image/landing/landing-j1s-2.jpg" alt="">
+				<h6 class="landing-pro-type">标准版，到手即用</h6>
+				<em class="landing-pro-price">￥129.00</em>
+				<a href="http://store.hiwifi.com/yuyue" class="now-booking-btn small">立即预约</a>
+			</div>
+			<div class="landing-pro-right">
+				<img src="http://c.hiwifi.com/ued/store/v3/image/landing/landing-j1s-3.jpg" alt="">
+				<h6 class="landing-pro-type">裸机版，自备SD卡首选</h6>
+				<span>仅售<em class="landing-pro-price">￥99.00</em></span>
+				<a href="http://store.hiwifi.com/yuyue" class="now-booking-btn small">立即预约</a>
+			</div>
+			<p class="f15">极路由拥有海量插件，让你的路由器真正智能起来！<br/>安装插件需为路由器搭配SD卡使用，标准版已为您搭配了8G SD卡（Class10超高速型号），让您获得最佳插件使用体验。</p>
+		</div>
+	</div>
+	<div class="landing-line three line-bg">
+		<div class="landing-line-wrap landing-center">
+			<h6 class="landing-h6">视频广告烦？广告快进就够了吗？</h6>
+			<h6 class="landing-h6-sub">用极路由，无需换浏览器！无需装插件，直接去广告，就是这么神！</h6>
+			<div class="landing-bg-ad"></div>
+			<p class="landing-p">去广告功能同时兼容PC、手机、平板等多种设备！</p>
+			<a href="http://store.hiwifi.com/yuyue" class="now-booking-btn">立即预约</a>
+		</div>
+	</div>
+	<div class="landing-line four line-bg">
+		<div class="landing-line-wrap">
+			<div class="landing-pro-right">
+				<h6 class="landing-h6">信号强！上网快！</h6>
+				<h6 class="landing-h6-sub">极壹S外置2根高性能天线，双向收发 更稳定，信号覆盖更广泛</h6>
+				<p class="landing-p">极路由在保证路由器辐射符合工信部无委会辐射标准要求的情况下，通过智能信号算法，让极路由信号覆盖范围更大更稳定!</p>
+				<a href="http://store.hiwifi.com/yuyue" class="now-booking-btn">立即预约</a>
+			</div>
+		</div>
+	</div>
+	<div class="landing-line five">
+		<div class="landing-line-wrap landing-center">
+			<h6 class="landing-h6">极壹S智能路由器，海量插件满足你的各种需求</h6>
+			<div class="landing-bg-app"></div>
+			<p class="landing-p">只有极路由才能让你通过安装插件来获得极棒的上网加速体验<br/>极路由创造性的通过插件全面解决了电信、联通、校园网之间的跨网传输问题<br/>会让你在看视频、玩游戏、下载APP、上传文件等保持实时加速</p>
+			<p class="landing-p f20">各种插件还在不断更新和增加中，给予您无限扩展可能。</p>
+			<a href="http://store.hiwifi.com/yuyue" class="now-booking-btn">立即预约</a>
+		</div>
+	</div>
+	<div class="landing-line six">
+		<div class="landing-line-wrap clearfix">
+			<img src="http://c.hiwifi.com/ued/store/v3/image/landing/landing-j1s-date_0325.png" alt="" class="landing-date">
+			<div class="landing-right">
+				<div class="landing-bg-text"></div>
+				<p>4月2日星期三中午12点</p>
+				<a href="http://store.hiwifi.com/yuyue" class="now-booking-btn">立即预约</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+body,h1,h2,h3,p,ul,li{ margin: 0; padding: 0;}
+body{ padding: 5%; line-height: 2; font-family: sans-serif;}
+ul,li{ list-style: none;}
+button{ padding: 10px 30px; font-size: 1em; border: none; border-radius: 10px; cursor: pointer;}
+button:hover{ background: blue; color: #fff;}
+button:active{ background: #333; color: #fff;}
+
+.buttons{ margin-top: 30px;}
+.class{ font-size: 40px;}
+.blue{ color: blue;}
+.red{ color: red;}

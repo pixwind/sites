@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>gears</title>
+<style type="text/css">
+body{ text-align: center; background: #333;}
+
+@-webkit-keyframes spinAround {
+	from {
+		-webkit-transform: rotate(0deg)
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@-moz-keyframes spinAround {
+	from {
+		-moz-transform: rotate(0deg)
+	}
+	to {
+		-moz-transform: rotate(360deg);
+	}
+}
+@keyframes spinAround {
+	from {
+		transform: rotate(0deg)
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+@-webkit-keyframes spinAround2 {
+	from {
+		-webkit-transform: rotate(360deg)
+	}
+	to {
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-moz-keyframes spinAround2 {
+	from {
+		-moz-transform: rotate(360deg)
+	}
+	to {
+		-moz-transform: rotate(0deg);
+	}
+}
+@keyframes spinAround2 {
+	from {
+		transform: rotate(360deg)
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+.gears{ position: relative; width: 600px; margin: 30px auto;}	
+.rotate{ position: absolute; display: block;
+	-webkit-animation: spinAround 10s linear infinite;
+	-moz-animation: spinAround 10s linear infinite;
+	animation: spinAround 10s linear infinite;
+}
+
+.gear1{ top:312px; left: 68px;width: 357px; height: 357px; background-image: url(images/gear1.png);
+	-webkit-animation: spinAround2 10s linear infinite;
+	-moz-animation: spinAround2 10s linear infinite;
+	animation: spinAround2 10s linear infinite;
+}
+.gear2{ width: 331px; height: 331px; background-image: url(images/gear2.png);}
+.gear3{ top:490px; left: 398px; width: 177px; height: 177px; background-image: url(images/gear3.png);}
+</style>
+</head>
+<body>
+<div class="gears">
+    <a class="rotate gear1"></a>
+    <a class="rotate gear2"></a>
+    <a class="rotate gear3"></a>
+</div>
+</body>
+</html>

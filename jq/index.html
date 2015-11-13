@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<title>jQuery演练</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".hide").click(function(){
+		$("h1,h2").hide();
+	});
+	$(".hide2").click(function(){
+		$("[href]").hide(1000);
+	});
+	$(".css").click(function(){
+		$("h1") .css("background-color","#ddd");	
+	});
+	$(".addClass").click(function(){
+		$("h2").addClass("class blue");
+	});
+	$(".removeClass").click(function(){
+		$("h2").removeClass("blue");
+	});
+	$(".toggleClass").click(function(){
+		$("p").toggleClass("red")
+	})
+	$(".fade").click(function(){
+    	$("#div1").fadeIn();
+		$("#div2").fadeIn("slow");
+		$("#div3").fadeIn(3000);
+  });
+});
+</script>
+
+</head>
+<body>
+<h1>jQuery演练</h1>
+<h2>我们都是神枪手</h2>
+<p>是么？每一颗子弹消灭一个敌人</p>
+<a href="#">我是链接</a>
+<div class="buttons">
+	<button class="hide">隐藏</button>
+	<button class="hide2">隐藏链接</button>
+	<button class="css">添加样式</button>
+	<button class="addClass">添加Class</button>
+	<button class="removeClass">删除Class</button>
+	<button class="toggleClass">切换Class</button>
+	<button class="fade">淡入淡出</button>
+</div>
+<br />
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+</body>
+</html>

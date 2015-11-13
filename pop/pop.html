@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>popbox</title>
+<link rel="stylesheet"  href="css/pop.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<a href="#" class="open">打开弹窗</a>
+	<div id="mask" style="display:none;"></div>
+	<div id="popbox" style="display: none;">
+		<h2>请确认操作</h2>
+		<p>开发版本不排除会出现一些问题，需要您具备一定动手能力去处理。<br />
+			您也随时可以切换为稳定版。<br />
+			更多的信息请到论坛里搜索“<b>开发版</b>”。</p>
+		<a href="#" class="btn grey close">取消</a><a href="#" class="btn close">我确认</a>
+	</div>
+<script type="text/javascript">
+$('.open').click(function(){
+    openDialog()
+})
+$('.close').click(function(){
+    closeDialog()
+})
+
+    //openDialog()
+    function openDialog(){
+        var $dialog = $('#popbox'),
+                $mask = $('#mask'),
+                l = $(window).width()/2-$dialog.width()/ 2,
+                t = $(window).height()/2-$dialog.height()/ 2,
+                h=$(document).height();
+                
+        $dialog.css({'left':l+'px','top':t+'px'}).show();
+        $mask.height(h).show()
+    }
+    function closeDialog(){
+                    var $dialog = $('#popbox'),
+                $mask = $('#mask');
+                $dialog.hide()
+                $mask.hide()
+
+    }
+</script>
+</body>
+</html>
