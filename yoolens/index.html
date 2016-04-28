@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>yoolens</title>
+<style type="text/css">
+#yoolens{ text-align: center;}
+#show{ display: block; margin: 30px auto; width: 512px; height: 512px; border: 1px solid #ddd;}
+.lenslist img{ width: 32px; height: 32px; cursor: pointer;}
+</style>
+</head>
+<body>
+<div id="yoolens">
+	<div id="show"></div>
+	<div class="lenslist">
+	    <img src="images/lens0.png">
+	    <img src="images/lens1.png">
+	    <img src="images/lens2.png">
+	    <img src="images/lens3.png">
+	    <img src="images/lens4.png">
+	</div>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+$("#yoolens .lenslist img").click(function(){
+	i=$(this).index();
+    $("#yoolens #show").css("background",'url(images/lens'+i+'.png)');
+});
+</script>
+</body>
+</html>
