@@ -15,7 +15,13 @@
 <div id="header">
 	<div class="wrap">
 		<a href="index.html" id="toggle" class="fr">宽</a>
-		<a href="#" id="logo"><img src="img/logo.svg" alt=""></a>
+		<a href="#" id="logo">
+			<object data="img/logo.svg" type="image/svg+xml">
+				<!-- [ if lte IE 8 ] -->
+				<img src="img/logo.png" alt="">
+				<!-- [endif] -->
+			</object>
+		</a>
 	</div>
 </div>
 
